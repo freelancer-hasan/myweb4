@@ -1,0 +1,238 @@
+/* ----------- Global Style ------------ */
+
+.container {
+    max-width: 1290px;
+}
+
+body{
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	background-color: var(--rgb-white);
+	color: var(--rgb-black);
+}
+.dark-theme{
+	--rgb-black:white;
+	--rgb-white:black;
+}
+
+:root{
+	--main-color:#ff4f3b;
+	--box-color:#3bff89;
+	--rgb-black:black;
+	--rgb-white:white;
+}
+
+/* ----------- all design ------- */
+
+/* ----------- navbar design area start ----------- */
+
+a.navbar-brand{
+	font-size: 28px;
+}
+button.navbar-toggler {
+    outline: none;
+}
+button.navbar-toggler i{
+    color: var(--rgb-black);
+}
+.navbar{
+	border-bottom: 1px solid var(--box-color);
+}
+.navbar img {
+    width: 50px;
+}
+#navbarNav ul li{
+	margin-left: 10px;
+}
+#navbarNav ul li a{
+	font-size: 25px;
+	color: var(--rgb-black);
+}
+#navbarNav ul li a:hover{
+	color: var(--main-color);
+	transition: 0.3s;
+}
+
+/* ----------- navbar design area end ----------- */
+
+/* -------------- showcase area design start */
+
+section#showcase{
+	height: 74vh;
+	margin-top: 10rem;
+}
+#showcase img {
+    width: 250px;
+    border-radius: 50%;
+    box-shadow: rgb(213 255 202) 0px -2px 17px;
+}
+#showcase .person{
+	text-align: center;
+}
+#showcase h1{
+	font-size: 60px;
+	color: var(--main-color);
+}
+#showcase span{
+	font-size: 2rem;
+	color: var(--box-color);
+}
+#showcase p{
+	font-size: 20px;
+}
+/* -------------- showcase area design end ---------------- */
+/* -------------- about area design start ---------------- */
+section#about-info p.about-info-p, section#services-section p.about-info-p, section#my-portfolio p.portfolio-info-p, section#contact-info p.contact-info-p{
+	color: var(--box-color);
+}
+section#about-info .about-cont{
+    text-align: left;
+
+}
+section#about-info img{
+    padding: 15px;
+    border: 1px solid var(--box-color);
+    width: 300px;
+    border-radius: 3px;
+}
+.about-cont button{
+    padding: 8px;
+    border-radius: 30px;
+    background-color: var(--rgb-white);
+    outline: none !important;
+    color: var(--box-color);
+    border: 1px solid var(--box-color);
+    cursor: pointer;
+    font-weight: 500;
+    transition: .3s;
+}
+.about-cont button:hover{
+	color: var(--main-color);
+}
+.social a{
+	text-decoration: none;
+}
+.social i {
+    font-size: 21px;
+    padding: 5px;
+    border: 1px solid var(--box-color);
+    border-radius: 50%;
+    margin-top: 9px;
+    transition: 0.3s;
+    color: var(--rgb-black);
+}
+.social i:hover{
+	color: var(--main-color)
+}
+/* ---------- about area design end ----------- */
+
+/* ---------- services area design start ----------- */
+section#services-section i{
+	font-size: 30px;
+}
+section#services-section p.p-text{
+	font-size: 20px;
+}
+.service-con {
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+    padding: 15px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+section#services-section i {
+    font-size: 30px;
+    border: 1px solid var(--main-color);
+    padding: 10px 15px 10px 15px;
+    border-radius: 50%;
+}
+section#services-section i:hover{
+	color: var(--box-color);
+	transition: .3s;
+}
+/* ---------- services area design end ----------- */
+/* ---------- porfolio area design start ----------- */
+
+section#my-portfolio a{
+	text-decoration: none;
+}
+.portfolio-con {
+    padding: 15px;
+    border: 1px solid var(--box-color);
+    border-radius: 5px;
+    padding-bottom: 0px;
+}
+.portfolio-con img {
+    border-radius: 10px;
+}
+.portfolio-con p {
+    color: var(--rgb-black);
+    font-size: 20px;
+    text-align: left;
+    padding-top: 2px;
+}
+.portfolio-con p:hover{
+	color: var(--main-color);
+}
+/* ---------- porfolio area design end ----------- */
+/* ---------- contact area design start ----------- */
+.contact-card {
+    background-color: var(--rgb-white);
+    border: 1px solid var(--box-color);
+}
+.contact-card a{
+    background-color: var(--rgb-black);
+    color: var(--rgb-white);
+}
+.card.contact-info-add {
+    background-color: var(--rgb-white);
+    border: 1px solid var(--box-color);
+}
+/* ---------- contact area design end ----------- */
+/* ---------- footer area design start ----------- */
+footer{
+	border-top: 1px solid var(--main-color);
+}
+footer span{
+	color: white;
+}
+/* ---------- footer area design end ----------- */
+
+
+
+
+
+
+
+/* ---------- media query --------- */
+
+@media(max-width: 768px){
+	.navbar ul{
+		text-align: center;
+	}
+}
+@media(max-width: 768px){
+	#showcase .myname{
+		text-align: center !important;
+	}
+	section#about-info {
+    margin-top: 200px;
+	}
+	.about-cont{
+		padding: 36px
+	}
+}
+@media(max-width: 992px){
+	.about-cont{
+		padding: 38px;
+	}
+}
+@media(max-width: 380px){
+	#showcase h1 {
+    font-size: 50px;
+	}
+	#showcase span{
+		font-size: 25px;
+	}
+}
